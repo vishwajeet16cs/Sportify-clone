@@ -23,7 +23,7 @@ nav ul{
         /*for using align-items first we have to make it as flex  */
     background-color: black;
     color: white;
-    border: 5px solid #228b52;
+    /* border: 5px solid #228b52; */
 }
 nav ul li{
     padding: 10px;
@@ -32,11 +32,11 @@ nav ul li{
     width: 44px;
     padding: 0 8px;
     /* to give space between logo and sportify name */
-    border: 5px solid #e6e485;
+    /* border: 5px solid #e6e485; */
 } 
 .brand{
     display: flex;
-    border: 5px solid #32a8c5;
+    /* border: 5px solid #32a8c5; */
     align-items: center;
     font-weight: bolder;/* for making text bold */
     font-size: 1.6rem;/* for making text bigger */
@@ -51,7 +51,7 @@ nav ul li{
     display: flex;
     margin: 23px auto;
     width: 90%;
-    border: 5px solid #37b6ff;
+    /* border: 5px solid #37b6ff; */
     /* border:10px; */
     border-radius: 20px;
     background-image: url('bg.jpg');
@@ -66,8 +66,9 @@ nav ul li{
     justify-content:center;/* it we make every element inside the container to the center from top & bottom */
     align-items: center;/* it will aline all item at the center from left & right */
     flex-direction: column;/* flex the item in colom wise */
-    border: 10px solid #5d6bbb;/* for checking container length and width using border props */
-    border-radius: 360px;
+    /* border: 10px solid #5d6bbb; */
+    /* for checking container length and width using border props */
+    /* border-radius: 360px; */
     
 }
 .icons{
@@ -84,22 +85,44 @@ nav ul li{
     
 }
 .songItem{
-    height: 50px;
+    height: 30px;
     display: flex;
     background-color: white;
     color: black;
-    width:80%;
-    border: 5px solid #b6e2b2;
+    /* width:80%; */
+    /* border: 5px solid #b6e2b2; */
     border-radius: 100px;
-    /* display: flex; */
-    margin: 12px 0px;
+    /* display: flex; */ 
+    margin: 12px 20px;
     /* top and bottom 12px and left right 0px */
     justify-content: space-between;
     align-items: center;
+    /* border-radius:0px;-- it will over write the upper one  */
 }
 .songItem img{
     /* border: 5px solid #df7770; */
     border-radius: 100px;
-    width: 43px;/* for resist liking of image */
+    width: 30px;/* for resist liking of image */
 
+}
+.timestamp{
+           margin:0 30px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songItemContainer {
+    margin-top: 55px;
+    /* border: 1px solid #dbb343; */
+}
+.songInfo{
+    position: absolute;
+    left:0vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky). */
+
+.songInfo img{
+    opacity:0;
+    transition: opacity is ease-in; /* when opacity is one it will show this img tag content eg:-image  */
 }
