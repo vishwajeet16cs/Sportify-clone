@@ -1,0 +1,25 @@
+nav{
+    /* background-color: black;
+    color: wheat; */
+    font-family: 'Comforter', cursive, bold;
+    font-weight: bold;
+    /* display: flex;  */
+}
+/* nav ul li img{
+    width:  50%;
+    height: 50%;
+} */
+nav ul{
+    display: flex;
+    /* display flex make all ul tag horizontal line
+        in one alinement */
+        list-style-type: none;/* remove list bullet */
+
+        background-color: black;
+        color: white;
+        
+    /* padding: 5px; */
+}
+nav ul li{
+    /* padding: 5px; */
+}

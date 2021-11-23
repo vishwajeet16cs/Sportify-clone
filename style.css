@@ -1,122 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-body{
-    background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Ubuntu:wght@300;400&display=swap');
+body {
+    background-color: rgb(216, 210, 201);
 }
-
 *{
     margin: 0;
     padding: 0;
 }
-
 nav{
+    /* background-color: black;
+    color: wheat; */
+    /* font-family: 'Comforter', cursive, bold; */
+    font-family: 'Comforter', cursive;
     font-family: 'Ubuntu', sans-serif;
+    /* display: flex;  */
 }
-
 nav ul{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    height: 65px;
+    display: flex;/* display flex make all ul tag horizontal line
+    in one alinement */
+    list-style-type: none;/* remove list bullet */
+    align-items: center;/* to bring home and about at the center */ 
+        /*for using align-items first we have to make it as flex  */
     background-color: black;
     color: white;
+    border: 5px solid #228b52;
 }
-
 nav ul li{
-    padding: 0 12px;
+    padding: 10px;
 }
 .brand img{
     width: 44px;
     padding: 0 8px;
-}
-
-.brand {
+    /* to give space between logo and sportify name */
+    border: 5px solid #e6e485;
+} 
+.brand{
     display: flex;
+    border: 5px solid #32a8c5;
     align-items: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
+    font-weight: bolder;/* for making text bold */
+    font-size: 1.6rem;/* for making text bigger */
 }
-
 .container{
-    min-height: 72vh;
-    background-color: black;
-    color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   margin: 23px auto;
-   width: 70%;
-   border-radius: 12px;
-   padding: 34px;
-   background-image: url('bg.jpg');
+    min-height: 50vh;
+    /* 75vh == 500px-- can't give space between 75 and vh it will not work */
+    background-color: rgb(0, 160, 53);
+    color:white;
+    font-family: 'Comforter', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 90%;
+    border: 5px solid #37b6ff;
+    /* border:10px; */
+    border-radius: 20px;
+    background-image: url('bg.jpg');
 }
-
 .bottom{
     position: sticky;
-    bottom: 0;
-    height: 130px;
-    background-color: black;
+    height: 100px;
     color: white;
+    background-color: black;
+    /* bottom: 0 ; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
+    justify-content:center;/* it we make every element inside the container to the center from top & bottom */
+    align-items: center;/* it will aline all item at the center from left & right */
+    flex-direction: column;/* flex the item in colom wise */
+    border: 10px solid #5d6bbb;/* for checking container length and width using border props */
+    border-radius: 360px;
+    
 }
-
 .icons{
-    margin-top: 14px; 
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
 }
-.icons i{
+.icons{
     cursor: pointer;
+    /* make arrow-cursor as a hand-cursor*/
 }
-
-#myProgressBar{
-    width: 80vw; 
-    cursor: pointer;
+#mpProgressBar{
+    width:80vw;
+    /* setting the width of slider or progress bar */
+    
 }
-
-.songItemContainer{
-    margin-top: 74px;
-}
-
 .songItem{
     height: 50px;
     display: flex;
     background-color: white;
-    
     color: black;
-    margin: 12px 0;
+    width:80%;
+    border: 5px solid #b6e2b2;
+    border-radius: 100px;
+    /* display: flex; */
+    margin: 12px 0px;
+    /* top and bottom 12px and left right 0px */
     justify-content: space-between;
     align-items: center;
-    border-radius: 34px;
 }
-
 .songItem img{
-    width: 43px;
-    margin: 0 23px;
-    border-radius: 34px;
-}
+    /* border: 5px solid #df7770; */
+    border-radius: 100px;
+    width: 43px;/* for resist liking of image */
 
-.timestamp{
-    margin: 0 23px;
 }
-
-.timestamp i{
-    cursor: pointer;
-}
-
-.songInfo{
-    position: absolute;
-    left: 10vw;
-    font-family: 'Varela Round', sans-serif;
-}
-
-.songInfo img{
-    opacity: 0;
-    transition: opacity 0.4s ease-in;
-}
-
-@media only screen and (max-width: 1100px) {
-    body {
-      background-color: red;
-    }
-  }
